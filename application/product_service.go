@@ -52,3 +52,7 @@ func (s *ProductService) Disable(product ProductInterface) (ProductInterface, er
 	}
 	return result, nil
 }
+
+func NewProductService(p ProductPersistenceInterface) *ProductService {
+	return &ProductService{Persistence: p}
+}
