@@ -1,4 +1,6 @@
-
+# Recognize golang in terminal
+export PATH=$PATH:/usr/local/go/bin
+go version
 
 go install github.com/golang/mock/mockgen@v1.6.0
 
